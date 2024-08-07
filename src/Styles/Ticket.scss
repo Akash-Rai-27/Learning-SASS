@@ -6,7 +6,7 @@ $yellow-light: #f3f1c9;
 $border-color: #444;
 
 body {
-  background: #646363;
+  background: #f2f2f2;
   font-family: 'Questrial', sans-serif;
 }
 
@@ -240,6 +240,7 @@ footer {
 		writing-mode: vertical-rl;
 		p {
 			transform: rotate(180deg);
+			margin-right: -0px;
 		}
 	}
 	.info {

@@ -1,0 +1,152 @@
+$green: #12C241;
+$white: #FFFFFF;
+$text-color:#000000 ;
+$font-de: 'Kanit';
+
+body{
+    margin: 0;
+    padding: 0;
+    background: #1e1e1e;
+}
+
+.main-content {
+    margin: 4rem auto 0;
+    width: 740px;
+    display: grid;
+    grid-template-columns: auto , 143px;
+    background-color: #ffffff;
+    padding: 2px;
+
+    font-family:'Courier New', Courier, monospace;
+
+}
+
+  
+
+
+
+.container {
+    // background-color: red;
+    display: grid;
+    grid-template-columns: 2fr 3fr 1fr;
+    grid-template-rows: 160px;
+    background-color: #fff;
+
+    .image{
+        grid-column: 1/2 ;
+        grid-row:1/2 ;
+        background-color: teal;
+        display: grid;
+        grid-template-rows: auto;
+        object-fit: fill;
+        object-position: 2% 2%;
+        
+        img{
+            width: 247px;
+            height: 160px;
+            object-fit: none;
+            object-position: 5% 5%;
+        }
+    }
+
+    .middle{
+        grid-column: 2/3;
+        grid-row: 1/2;
+        background-color: $green;
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 1fr 1fr 1fr;
+        font-family:'Courier New', Courier, monospace;
+        padding-left: 20px;
+
+        .title{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 5px;
+
+            .heading{
+                font-size: 32px;
+                font-weight: bold;
+            }
+            .subheading{
+                font-size: 16px;
+                font-weight: 800;
+            }
+        }
+
+        .info-date{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            font-weight: 800;
+        }
+
+        .info-loct{
+            display: flex;
+            flex-direction: column;
+            font-size: 12px;
+            justify-content: center;
+            font-weight: lighter;
+        }
+    }
+
+    .side-details {
+        grid-column:3/4;
+        grid-row:1/2 ;
+        background-color: #fff;
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 1fr 2fr;
+    }
+
+    .side-info{
+        display: flex;
+        flex-direction: column;
+        row-gap:2px;
+        font-size: 12px;
+        justify-content: center;
+        padding-left: 10px;
+        padding-top: 8px;
+    }
+
+
+    .bar{
+        rotate: -90deg;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        position: relative;
+        left: -8px;
+    }
+
+    .barcode{
+
+    align-self: center;
+
+    background-color: #12C241;
+    rotate: 90deg;
+
+   
+
+    img{
+        height: 90px;
+        width: 60px;  
+        }
+    }
+   
+
+    .bar-number{
+        font-size: 9px;
+        font-weight: bold;
+        position: absolute;
+
+  
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: center;
+    }
+
+
+}
