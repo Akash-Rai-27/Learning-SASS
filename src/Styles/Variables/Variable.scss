@@ -1,0 +1,19 @@
+// Colors
+$blackColor : rgb(24,24,24);
+$whiteColor : rgb(220, 220, 220);
+$redColor : rgb(191, 81, 81);
+
+// Fonts
+$titleFont : Arial, Helvetica, sans-serif;
+$bodyFont : "Times New Roman", Times, serif;
+
+
+@mixin buttonStyle {
+    width: 200px;
+    height: 40px;
+    background-color: $redColor;
+    border:none;
+    border-radius: 2px;
+    color:$whiteColor;
+    font-size: 24px;
+}
